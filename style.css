@@ -22,12 +22,15 @@ body{
     align-items: center;
     min-height: 100vh;
     background-color: var(--color-background);
+    padding:1rem;
 }
 
 .card{
     background-color: var(--color-card);
     padding: 1rem;
-    max-width: 400px;
+    max-width: 80%;
+    width: 400px;
+    min-width: 250px;
     border: 1px solid black;
     border-radius: 12px;
     box-shadow: 6px 6px 1px 0px black;
@@ -67,6 +70,7 @@ body{
 .card-heading{
     color:var(--color-text-primary);
     font-weight: 800;
+    width: 100%;
 }
 
 .card-text{
@@ -77,6 +81,7 @@ body{
 .card-author{
     color: var(--color-text-primary);
     font-weight: 900;
+    width: 100%;
 }
 
 
@@ -97,5 +102,12 @@ body{
     width: 40px;
 }
 
-.attribution { font-size: 11px; text-align: center; }
+.attribution { font-size: 0.5rem; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
+
+
+@media screen and (max-width: 375px) {
+    :root{
+        font-size: 14px;
+    }
+}
