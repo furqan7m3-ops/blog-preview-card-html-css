@@ -10,8 +10,8 @@
     --color-background:rgb(244,208,78);
     --color-card: rgb(255,255,255);
     --color-accent: rgb(244,208,78);
-    --color-heading:rgb(17,17,17);
-    --color-text: rgb(107,107,107);
+    --color-text-primary:rgb(17,17,17);
+    --color-text-secondary: rgb(107,107,107);
 }
 
 body{
@@ -26,8 +26,42 @@ body{
 
 .card{
     background-color: var(--color-card);
+    padding: 1rem;
 }
 
+.card-img-container{
+    width: 100%;
+    display: flex;
+}
+
+.card-img{
+    max-width: 100%;
+    width: 350px;
+    object-fit: cover;
+    height: auto;
+    border: 2px solid blue;
+}
+
+
+.card-tag{
+    color:var(--color-text-primary);
+    background-color: var(--color-accent);
+    padding:0.5rem 1rem;
+    display: inline-block;
+}
+
+
+.card-heading{
+    color:var(--color-text-primary);
+}
+
+.card-text{
+    color:var(--color-text-secondary);
+}
+
+.card-author{
+    color: var(--color-text-primary);
+}
 
 
 .attribution { font-size: 11px; text-align: center; }
