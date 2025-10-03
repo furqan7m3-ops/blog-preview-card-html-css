@@ -35,6 +35,11 @@ body{
     border-radius: 12px;
     box-shadow: 6px 6px 1px 0px black;
     margin-bottom: 1rem;
+    transition: transform 400ms ease;
+}
+
+.card:hover{
+    transform: scale(1.01);
 }
 
 .card-img-container{
@@ -71,6 +76,11 @@ body{
     color:var(--color-text-primary);
     font-weight: 800;
     width: 100%;
+}
+
+.card-heading:hover{
+    color: var(--color-accent);
+    cursor: pointer;
 }
 
 .card-text{
