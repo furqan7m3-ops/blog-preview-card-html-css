@@ -30,7 +30,7 @@ body{
     max-width: 400px;
     border: 1px solid black;
     border-radius: 12px;
-    box-shadow: 5px 5px 1px 0px black;
+    box-shadow: 6px 6px 1px 0px black;
     margin-bottom: 1rem;
 }
 
@@ -51,9 +51,11 @@ body{
 .card-tag{
     color:var(--color-text-primary);
     background-color: var(--color-accent);
-    padding:0.5rem 1rem;
+    padding:0.5rem 0.9rem;
     display: inline-block;
     margin-block:0.5rem;
+    font-weight: 800;
+    border-radius: 5px;
 }
 
 
@@ -64,14 +66,17 @@ body{
 
 .card-heading{
     color:var(--color-text-primary);
+    font-weight: 800;
 }
 
 .card-text{
     color:var(--color-text-secondary);
+    line-height: 1.5;
 }
 
 .card-author{
     color: var(--color-text-primary);
+    font-weight: 900;
 }
 
 
@@ -80,6 +85,16 @@ body{
     flex-direction: column;
     gap: 0.5rem;
     /* border: 2px solid red; */
+}
+
+.card-footer{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.card-footer > img{
+    width: 40px;
 }
 
 .attribution { font-size: 11px; text-align: center; }
