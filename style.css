@@ -27,19 +27,24 @@ body{
 .card{
     background-color: var(--color-card);
     padding: 1rem;
+    max-width: 400px;
+    border: 1px solid black;
+    border-radius: 12px;
+    box-shadow: 5px 5px 1px 0px black;
+    margin-bottom: 1rem;
 }
 
 .card-img-container{
     width: 100%;
-    display: flex;
 }
 
 .card-img{
+    border-radius: 12px;
     max-width: 100%;
-    width: 350px;
+    width: 100%;
     object-fit: cover;
     height: auto;
-    border: 2px solid blue;
+    /* border: 2px solid blue; */
 }
 
 
@@ -48,8 +53,14 @@ body{
     background-color: var(--color-accent);
     padding:0.5rem 1rem;
     display: inline-block;
+    margin-block:0.5rem;
 }
 
+
+.card-date{
+    display: block;
+    margin-bottom: 0.8rem;
+}
 
 .card-heading{
     color:var(--color-text-primary);
@@ -63,6 +74,13 @@ body{
     color: var(--color-text-primary);
 }
 
+
+.card-body{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    /* border: 2px solid red; */
+}
 
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
